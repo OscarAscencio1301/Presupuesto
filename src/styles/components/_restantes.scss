@@ -1,0 +1,127 @@
+.restante__container{
+    background-color: white;
+    width: 90%;
+    border-radius: 20px;
+    color: $fondo;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    
+    @include pc() {
+    background-color: white;
+    flex-direction: row;
+    width: 70%;
+    border-radius: 20px;
+    color: $fondo;
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+    }
+
+}
+
+.container{
+    flex: 0 1 50%;
+}
+.container2{
+    flex: 0 1 50%;
+    padding: 0 1rem;
+}
+
+.restante__input{
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    padding: 0.2rem 0;
+    border: none;
+    border-bottom: 1px solid $fondo;
+    background-color: white;
+    outline: none;
+    &::placeholder{
+        margin-left: 1rem;
+    }
+}
+
+.restante__boton{
+    width: 100%;
+    font-size: 1.4rem;
+    background-color: $botones;
+    color: white;
+    border:none;
+    border-radius: 10px;
+    font-weight: 100;
+    padding: 0.4rem 0;
+    &:hover{
+        transform: scale(1.01);
+        cursor: pointer;
+    }
+
+}
+
+
+.texto__presupuesto{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(21, 187, 216, 0.486);
+    align-items: center;
+    color: blue;
+    border-radius: 5px;
+    margin: 0.8rem 0;
+    padding: 0.4rem 1rem;
+}
+
+.gasto__individual{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.4rem 0;
+    padding: 0.6rem;
+    border-bottom: 1px solid gray;
+}
+
+.gasto__titulo{
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+.gasto__precio{
+    background-color: $fondo;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.4rem;
+}
+
+.texto__restante-100{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(213, 216, 21, 0.692);
+    align-items: center;
+    color: black;
+    border-radius: 5px;
+    margin: 0.4rem 0;
+    padding: 0.4rem 1rem;
+}
+
+.texto__restante-50{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(53, 216, 21, 0.692);
+    align-items: center;
+    color: green;
+    border-radius: 5px;
+    margin: 0.4rem 0;
+    padding: 0.4rem 1rem;
+}
+
+.texto__restante-20{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(53, 216, 21, 0.692);
+    align-items: center;
+    color: green;
+    border-radius: 5px;
+    margin: 0.4rem 0;
+    padding: 0.4rem 1rem;
+}
